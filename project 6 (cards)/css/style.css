@@ -1,0 +1,84 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+     height: 900px;
+    perspective: 700px;
+}
+section{
+   margin: 50px;
+   padding-top: 100px;
+    transition: all 2s;
+    position: relative;
+     float: left;
+      transform-style:preserve-3d ;
+}
+section,.front ,.back{
+ width: 300px;
+ height :300px;
+
+
+}
+.front,.back{
+    position: absolute;
+}
+.front{
+   
+    z-index: 1;
+    backface-visibility: hidden;
+    
+}
+.back{
+   
+    text-align: center;
+   background-color: rgb(178, 185, 183);
+  transform: rotateY(180deg);
+}
+section:hover{
+    transform: rotateY(180deg)
+}
+section:nth-child(1) .front{
+    background-image: url(../images/R.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+section:nth-child(2) .front{
+    background-image: url(../images/s-l1600.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+section:nth-child(3) .front{
+    background-image: url(../images/s-l1600\ \(1\).webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+section:nth-child(4) .front{
+    background-image: url(../images/s-l300.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+section:nth-child(5) .front{
+    background-image: url(../images/s-l960.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+section:nth-child(6) .front{
+    background-image: url(../images/s-l1600\ \(2\).webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+
+.btn{
+    width: 100px;
+    height: 70px;
+    border: 1px solid ;
+    background-color: rgb(32, 32, 133);
+    margin-top: 50px;
+}
